@@ -1,0 +1,184 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "encryptedAccount",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "network",
+						"type": "string"
+					}
+				],
+				"name": "AccountStored",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "accounts",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "encryptedAccount",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "network",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getAccounts",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "owner",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "encryptedAccount",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "network",
+								"type": "string"
+							}
+						],
+						"internalType": "struct SecureAccounts.Account[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					}
+				],
+				"name": "getAccountsByAddress",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "owner",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "encryptedAccount",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "network",
+								"type": "string"
+							}
+						],
+						"internalType": "struct SecureAccounts.Account[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_encryptedAccount",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_network",
+						"type": "string"
+					}
+				],
+				"name": "storeEncryptedAccount",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/ST.sol": "SecureAccounts"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/ST.sol": {
+			"keccak256": "0xd7712df4f97630e4cd5ae703e140ea68ff9f709381bca41e7d8f7c35357bf6f7",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://51973b81bc11887c9f6e7ae3a332db45f3afb17c1338a6699c5dc9020034b12a",
+				"dweb:/ipfs/QmZMgywpUGygEEiD7hSyh54VQ5A3utNp2ijkkdZ18nwkN9"
+			]
+		}
+	},
+	"version": 1
+}
