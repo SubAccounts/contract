@@ -1,0 +1,146 @@
+{
+  "name": "SecureAccounts",
+  "address": "0xd9145CCE52D386f254917e481eB44e9943F39138",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "encryptedAccount",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "network",
+          "type": "string"
+        }
+      ],
+      "name": "AccountStored",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "_encryptedAccount",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "_network",
+          "type": "string"
+        }
+      ],
+      "name": "storeEncryptedAccount",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "accounts",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "internalType": "string",
+          "name": "encryptedAccount",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "network",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getAccounts",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "owner",
+              "type": "address"
+            },
+            {
+              "internalType": "string",
+              "name": "encryptedAccount",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "network",
+              "type": "string"
+            }
+          ],
+          "internalType": "struct SecureAccounts.Account[]",
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_owner",
+          "type": "address"
+        }
+      ],
+      "name": "getAccountsByAddress",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "owner",
+              "type": "address"
+            },
+            {
+              "internalType": "string",
+              "name": "encryptedAccount",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "network",
+              "type": "string"
+            }
+          ],
+          "internalType": "struct SecureAccounts.Account[]",
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "filePath": "st/contracts/ST.sol",
+  "pinnedAt": 1723990125009
+}
