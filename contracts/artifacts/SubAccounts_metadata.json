@@ -1,0 +1,210 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "encryptedAccount",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "network",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "accountAddress",
+						"type": "string"
+					}
+				],
+				"name": "SubAccountStored",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "getAllSubAccounts",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "owner",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "encryptedAccount",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "network",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "accountAddress",
+								"type": "string"
+							}
+						],
+						"internalType": "struct SubAccounts.SubAccount[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					}
+				],
+				"name": "getSubAccountsByAddress",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "owner",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "encryptedAccount",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "network",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "accountAddress",
+								"type": "string"
+							}
+						],
+						"internalType": "struct SubAccounts.SubAccount[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_encryptedAccount",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_network",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_accountAddress",
+						"type": "string"
+					}
+				],
+				"name": "storeSubAccount",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "subAccounts",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "encryptedAccount",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "network",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "accountAddress",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/SubAccounts.sol": "SubAccounts"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/SubAccounts.sol": {
+			"keccak256": "0xc73173668606c833cf2260011d5e6b566f8e70e41c2ffc60db38989f497ad8b4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://224fdf8cb3bb80dda68d4458da7b9cb3a5be295e68bf0439dc284881fe9b0ac0",
+				"dweb:/ipfs/QmTBBNs9geH81WTLf9cgsUcak2P29APUkHg72YgGwZYemj"
+			]
+		}
+	},
+	"version": 1
+}
