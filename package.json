@@ -1,0 +1,19 @@
+{
+  "name": "sub-accounts-contract",
+  "version": "0.0.6",
+  "description": "SubAccount Smart Contract",
+  "repository": "https://github.com/SubAccounts/contract",
+  "author": "Dmitriy Tarasov <meowbl@icloud.com>",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsup",
+    "generate:types:v5": "typechain --target ethers-v5 --out-dir typechain/ethers-v5/SubAccounts contracts/artifacts/SubAccounts.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@typechain/ethers-v5": "^11.1.2",
+    "ethers": "^5.7.2",
+    "tsup": "^8.2.4"
+  },
+  "license": "MIT"
+}
